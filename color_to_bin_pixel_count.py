@@ -3,7 +3,7 @@
 import cv2
 
 # Load the image
-image = cv2.imread("ogsample.jpg")  #this is the raw image we analize. 
+image = cv2.imread("ogsample.jpg")  #replace the ogsample.jpg with your image path
 
 # Convert to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -17,7 +17,7 @@ cv2.imwrite("binary_image.jpg", binary_image)
 #https://www.tutorialspoint.com/opencv-python-how-to-convert-a-colored-image-to-a-binary-image
 
 
-#now analie this image with pillow. 
+#now analyze this image with pillow. 
 from PIL import Image
 import numpy as np
 
@@ -26,7 +26,7 @@ def bw_anal(image_path):
     image_aray = np.array(image)
     total_pixels = image_aray.size
 
-    #threshhold for black or white range
+    # threshold for black or white range
     black_threshhold = 30
     white_threshhold = 225
 
